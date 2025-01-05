@@ -1,24 +1,31 @@
+import { Link, Route, Routes, BrowserRouter } from 'react-router-dom';
+import Gallery from './lesson2/components/Gallery.js'; // This component is imported but not used
+import Weather from './lesson3/components/page.js'; // This component is imported but not used
+//import HomePage from  
+import About from './TechFlow/components/aboutComponent.js';
+import Services from './TechFlow/components/ServicesComponent.js';
+import Contact from './TechFlow/components/ContactComponent.js';
+import HomePage from './TechFlow/components/HomePageComponent.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Link, Route, Routes } from 'react-router-dom';
-import Gallery from './lesson2/components/Gallery.js';
-import Weather from './lesson3/components/page.js';
 function App() {
-  return(
-  <BrowserRouter>
-  <nav>
-    <Link to="/">HomePage</Link>
-    <Link to="/about">About</Link>
-    <Link to="/contact">Aontact</Link>
-    <Link to="/services">Services</Link>
-  </nav>
-  <Routes>
-     <Route path="/" element={<homePageComponent/>}/>
-     <Route path="/about" element={<aboutComponent/>}/>
-     <Route path="/Contact" element={<ContactComponent/>}/>
-     <Route path="/services" element={<ServicesComponent/>}/>
-  </Routes>
-  </BrowserRouter>
+  return (
+    <BrowserRouter>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">  
+        <Link className="navbar-brand" to="/">HomePage</Link>
+        <Link className="navbar-brand" to="/about">About</Link>
+        <Link className="navbar-brand" to="/contact">Contact</Link>
+        <Link className="navbar-brand" to="/services">Services</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
