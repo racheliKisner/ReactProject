@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css'; 
-
+import { useNavigate } from 'react-router-dom';
 function Form() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -16,6 +16,8 @@ function Form() {
         setEmail('');
         setMessage('');
     }
+    const navigate=useNavigate();
+    const goTo=()=>{navigate('/ContactThank')};
 
     return (
         <>
@@ -51,7 +53,7 @@ function Form() {
                     required 
                 />
 
-                <button type="submit">שלח</button>
+                <button type="submit" onClick={goTo}>שלח</button>
             </form>
         </>
     );

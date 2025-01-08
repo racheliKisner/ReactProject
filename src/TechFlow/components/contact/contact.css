@@ -9,7 +9,10 @@ h2 {
     text-align: center;
     color: #333;
 }
-
+h1{
+    color: fuchsia;
+    font-size: xx-large;
+}
 form {
     background-color: white;
     padding: 20px;

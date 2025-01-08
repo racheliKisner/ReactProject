@@ -4,7 +4,6 @@ function ContainerHome()
 {
     return(
         <>
-       {/* <div className="container bg-light min-vh-100"> */}
             <header className="text-center my-4">
                 <h1>Welcome to TechFlow</h1>
                 <p>Your one-stop solution for tech news and resources.
@@ -20,7 +19,6 @@ function ContainerHome()
                     <p>Explore our awesome features.</p>
                 </section>
             </main>
-            {/* </div> */}
         </>
     );
 }
