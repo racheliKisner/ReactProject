@@ -1,31 +1,22 @@
-import ReactDOM from 'react-dom/client'
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
-import { I18nextProvider } from 'react-i18next'
-import i18next from 'i18next'
+i18n
+  .use(initReactI18next) // Passes i18n down to react-i18next
+  .init({
+    resources: {
+      en: {
+        translation: require('./locales/en/translation.json')
+      },
+      he: {
+        translation: require('./locales/he/translation.json')
+      }
+    },
+    lng: 'en', // Default language
+    fallbackLng: 'en', // Fallback language
+    interpolation: {
+      escapeValue: false // React already escapes values
+    }
+  });
 
-import global_en from './locales/en/global.json'
-import global_he from './locales/es/global.json'
-
-import App from './App.js'
-
-import './index.css'
-
-i18next.init({
- interpolation: { escapeValue: false },
-  lng: 'auto',
-  fallbackLng: 'en',
- resources: {
-  en: {
-   global: global_en,
-  },
- he: {
-   global: global_he,
-  },
- },
-})
-
-ReactDOM.createRoot(document.getElementById('root')).render(
- <I18nextProvider i18n={i18next}>
-  <App />
- </I18nextProvider>
-)
+export default i18n;
