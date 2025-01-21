@@ -1,4 +1,31 @@
 {
    "welcome": "ברוכים הבאים",
-   "thank_you": "תודה על הצטרפותכם!"
+   "thank_you": "🐒🐒🐒🐒🐒🐒",
+   "descrption":"😍😍😍😍😍",
+   
+   
+    "services": {
+      "title": "שירותים שלנו",
+      "consulting": {
+        "title": "ייעוץ טכנולוגי",
+        "description": "קבלו ייעוץ ממומחים בתחום הטכנולוגיה לעסק שלכם."
+      },
+      "appDevelopment": {
+        "title": "פיתוח אפליקציות",
+        "description": "פיתוח אפליקציות מותאמות אישית לכל הפלטפורמות."
+      },
+      "cloudServices": {
+        "title": "שירותי ענן",
+        "description": "פתרונות ענן מתקדמים לאחסון ולניהול נתונים."
+      },
+      "training": {
+        "title": "הדרכות טכנולוגיות",
+        "description": "הדרכות מקצועיות לשיפור הכישורים הטכנולוגיים שלכם."
+      },
+    
+      
+    "welcome": "ברוכים הבאים",
+    "thank_you": "תודה",
+    "description": "תיאור כללי"
+  }
  }
