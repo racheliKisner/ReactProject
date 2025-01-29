@@ -1,2 +1,5 @@
-export const ADD_TODO='ADD_TODO';
-export const REMOVE_TODO='REMOVE_TODO';
+
+export const ADD_TODO = 'ADD_TODO';
+export const REMOVE_TODO = 'REMOVE_TODO';
+export const RESTORE_TODO='RESTORE_TOD';
+export const REMOVEFROMRECYCLEBIN_TODO='REMOVEFROMRECYCLEBIN_TODO'

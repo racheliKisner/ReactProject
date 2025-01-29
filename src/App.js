@@ -9,20 +9,24 @@ import ContactThank from './TechFlow/components/contact/ContactThank.js';
 import { useTranslation } from 'react-i18next';
 import './i18n.js'
 import { Provider } from 'react-redux';
-import todos from './components/todos.js';
-import store from './redux/store.js';
+import Todos from './components/Todos.js';
+import RecycleBin from './components/RecycleBin.js'
+//import store from './redux/store.js';
+import store from './Redux/store.js'
 function App() {
   const{t,i18n}=useTranslation();
   const changeLanguage=(lng)=>{
     i18n.changeLanguage(lng)
   }
   return (
-    
-        <Provider store={store} >
-            <div>
-              <todos/>
-            </div>
-        </Provider>
+    <Provider store={store}>
+
+    <Todos/>
+    <RecycleBin/>
+    </Provider>
+
+
+  
 
 
     // <BrowserRouter>
