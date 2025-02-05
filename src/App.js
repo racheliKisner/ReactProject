@@ -13,17 +13,20 @@ import Todos from './components/Todos.js';
 import RecycleBin from './components/RecycleBin.js'
 //import store from './redux/store.js';
 import store from './Redux/store.js'
+import { Button } from 'bootstrap';
 function App() {
   const{t,i18n}=useTranslation();
   const changeLanguage=(lng)=>{
     i18n.changeLanguage(lng)
   }
   return (
-    <Provider store={store}>
 
-    <Todos/>
-    <RecycleBin/>
-    </Provider>
+    <button>הוסף הודעה</button>
+    // <Provider store={store}>
+
+    // <Todos/>
+    // <RecycleBin/>
+    // </Provider>
 
 
   
